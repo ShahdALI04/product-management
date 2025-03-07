@@ -64,6 +64,7 @@ button:hover{
 .btnSearch{
     display: flex;
     justify-content: space-between;
+    
 }
 .btnSearch button{
     width: 45%;
@@ -82,4 +83,50 @@ table th{
 }
 th , td{
     padding: 5px;
+}
+
+
+/* Responsive  */
+/*@media (max-width: 600px) {
+    .price input {
+        width: 100%;
+    }
+    .btnSearch {
+        flex-direction: column;
+        
+    }
+    .btnSearch button {
+        width: 100%;
+    }
+    table {
+        font-size: 14px;
+    }
+}*/
+@media (max-width: 768px) {
+    .price {
+        flex-direction: column;
+    }
+    .btnSearch {
+        flex-direction: column;
+    }
+    .btnSearch button {
+        width: 100%;
+    }
+    table {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .crud {
+        width: 100%;
+        padding: 15px;
+    }
+    input, button {
+        height: 35px;
+        font-size: 14px;
+    }
+    table th, table td {
+        padding: 8px;
+    }
 }
